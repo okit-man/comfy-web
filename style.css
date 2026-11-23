@@ -11,9 +11,6 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-bar {
-    /* width: 100%; */
-    /* background-color: red; */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-     height: 7rem;
+    height: 7rem;
 }
 
 /* links */
@@ -72,10 +69,6 @@ body {
     transition: all 0.3s linear;
 
     display: none;
-    
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
  }
  .toggle-btn:hover {
     background-color:  hsl(21, 62%, 35%);
@@ -88,7 +81,7 @@ body {
     cursor: pointer;
  }
  .nav-logo {
-    margin-right: 10rem;
+    /* margin-right: 10rem; */
  }
  img {
    /* width: 100%; */
@@ -101,7 +94,6 @@ body {
     /* background-color:  hsl(21, 62%, 45%); */
     position: relative;
     margin: 0.75rem;
-
  }
  .toggle-cart {
     border: transparent;
@@ -127,6 +119,7 @@ body {
     font-size: 0.75rem;
  }
 
+/* hero section */
 .hero {
    background: url(./image/main-bcg.jpeg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
    background-size: cover;
@@ -144,21 +137,20 @@ body {
     width: 90vw;
     max-width: 1170px;
  }
- h1 {
+ .hero h1 {
     font-size: 4.5rem;
     font-weight: 700;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.5rem;
     text-transform: capitalize;
-     margin: 3rem 0 1rem
+    margin: 3rem 0 1rem
  }
- h3 {
+ .hero h3 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
  .hero-btn {
-      /* background-color:  hsl(21, 62%, 45%);  */
       display: inline-block;
 
       color: #fff;
@@ -185,3 +177,60 @@ body {
    background-color: #fff;
    color:  hsl(21, 62%, 45%); 
  }
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+   .nav-links .nav-link {
+      font-size: 1.25rem;
+      color: black;
+   }
+   .hero h1 {
+      font-size: 4.5rem;
+      margin: 7rem 0 1rem;
+      letter-spacing: 0.4rem;
+   }
+   .hero h3 {
+      font-size: 1.8rem;
+      letter-spacing: 0.2rem;
+   }
+}
+
+
+
+
+ @media screen and (max-width: 800px) {
+   .nav-links .nav-link {
+      /* font-size: 1.15rem; */
+   }
+   .nav-links {
+       display: none;
+   }
+   .toggle-btn {
+       display: block;
+   }
+   .hero h1 {
+      font-size: 3rem;
+      margin: 9rem 0 0.5rem;
+      letter-spacing: 0.1rem;
+   }
+   .hero h3 {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+   }
+   }    
+
+   @media screen and (max-width: 370px) {
+      .hero h1 {
+         font-size: 2.5rem;
+         margin: 9rem 0 0.5rem;
+         letter-spacing: 0.1rem;
+      }
+      .hero h3 {
+         font-size: 0.8rem;
+         letter-spacing: 0.2rem;
+      }
+   }
